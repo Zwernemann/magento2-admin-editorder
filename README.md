@@ -1,4 +1,4 @@
-# Zwernemann_FixEditOrder
+# Magento FixEditOrder
 
 Fixes the "Edit Order" function in Magento 2 admin for stores with MSI disabled.
 
@@ -60,3 +60,11 @@ bin/magento cache:flush
 ## License
 
 MIT — Copyright (c) 2026 Zwernemann
+
+## Contact
+
+**Zwernemann Medienentwicklung**\
+Martin Zwernemann\
+79730 Murg, Germany
+
+[To the website](https://www.zwernemann.de/)
