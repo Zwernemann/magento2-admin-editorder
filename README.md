@@ -1,4 +1,4 @@
-# Magento FixEditOrder
+# Magento Fix Admin Reorder
 
 Fixes the "Edit Order" function in Magento 2 admin for stores with MSI disabled.
 
