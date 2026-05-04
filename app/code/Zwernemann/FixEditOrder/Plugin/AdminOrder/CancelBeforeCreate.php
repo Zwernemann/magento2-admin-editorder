@@ -46,13 +46,14 @@ class CancelBeforeCreate
             return $proceed($order);
         }
 
-        $quote        = $subject->getQuote();
-        $websiteId    = (int)$quote->getStore()->getWebsiteId();
+
+        $websiteId =  (int)$subject->getSession()->getStore()->getWebsiteId();
         $regOriginals = $this->applyRegistryCompensation($order, $websiteId);
 
         try {
             $result = $proceed($order);
 
+            $quote = $subject->getQuote();
             // Magento does not update the session quote_id after saving the quote
             // inside initFromOrder(). Without this the next request loads a fresh
             // empty quote and the items grid appears blank.
