@@ -59,9 +59,9 @@ class CancelBeforeCreate
             // Magento does not update the session quote_id after saving the quote
             // inside initFromOrder(). Without this the next request loads a fresh
             // empty quote and the items grid appears blank.
-            if ($quoteId = $quote->getId()) {
-                $subject->getSession()->setQuoteId($quoteId);
-            }
+            //if ($quoteId = $quote->getId()) {
+            //    $subject->getSession()->setQuoteId($quoteId);
+            //}
 
             return $result;
 
