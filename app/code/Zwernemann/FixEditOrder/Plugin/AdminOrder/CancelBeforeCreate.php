@@ -54,6 +54,7 @@ class CancelBeforeCreate
             $result = $proceed($order);
             
             //$quote must be defined after $proceed otherwise it is not initialized
+            //2026-05-05 do we need $quote anymore? think about it
             $quote = $subject->getQuote();
             
             // Magento does not update the session quote_id after saving the quote
